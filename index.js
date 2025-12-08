@@ -6,3 +6,26 @@ infoImg.style.background = `url(${imgs[imgIndex]})`;
 infoImg.style.backgroundSize = 'cover'
 
 console.log(imgIndex)
+
+
+
+let cards = document.querySelectorAll('.charCard');
+
+cards.forEach((card, index) => {
+    card.addEventListener('mouseenter', () => {
+        cards.forEach(c => c.classList.remove('big'));
+
+        if (index === 0) {
+            card.classList.add('big');
+        } else {
+            card.classList.add('big');
+        }
+    });
+
+    card.addEventListener('mouseleave', () => {
+        cards.forEach(c => c.classList.remove('big'));
+        cards[0].classList.add('big');
+    });
+});
+
+cards[0].classList.add('big');
