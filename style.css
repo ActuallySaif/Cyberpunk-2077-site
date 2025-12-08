@@ -132,6 +132,7 @@ nav a{
     text-transform: capitalize;
     animation: none;
     transition: all;
+    font-family: 'semi';
 }
 
 nav a:hover{
@@ -200,10 +201,12 @@ nav a:hover{
     width: 100%;
     margin-top: 20px;
     display: flex;
+    height: 591.675px;
+    align-items: center;
 }
 
 .infoText{
-    width: 50%;
+    width: 45%;
 }
 
 .infoTags{
@@ -225,6 +228,16 @@ nav a:hover{
     font-size: var(--normFont);
     color: var(--textWhite);
     margin-top: 60px;
+}
+
+#infoImg{
+    background: url(Images/img1.jpg);
+    mask: url(Images/cMask.svg) no-repeat center ;
+    background-size: cover;
+    width: 70%;
+    height: 591.675px;
+    position: absolute;
+    right: 0;
 }
 
 
