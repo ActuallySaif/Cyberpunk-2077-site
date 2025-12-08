@@ -11,6 +11,11 @@ console.log(imgIndex)
 
 let cards = document.querySelectorAll('.charCard');
 
+function selectCharacter(characterName) {
+    localStorage.setItem("selectedCharacter", characterName);
+    console.log("Selected:", characterName);
+}
+
 cards.forEach((card, index) => {
     card.addEventListener('mouseenter', () => {
         cards.forEach(c => c.classList.remove('big'));
@@ -32,9 +37,13 @@ cards[0].classList.add('big');
 
 
 
-cards.forEach((card, index) => {
-    card.addEventListener('click', () => {
-        selectCharacter(index); // saves character ID
-        window.location.href = "char.html"; // open template
+document.addEventListener("DOMContentLoaded", () => {
+    let cards = document.querySelectorAll('.charCard');
+
+    cards.forEach((card, index) => {
+        card.addEventListener('click', () => {
+            selectCharacter(index);
+            window.location.href = "char.html";
+        });
     });
 });
