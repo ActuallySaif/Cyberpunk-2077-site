@@ -8,6 +8,7 @@
     --normFont: 24px;
     --secTitle: 36px;
     --textBlack: black;
+    --textWhite: white;
 }
 
 *{
@@ -193,6 +194,37 @@ nav a:hover{
     color: var(--blueAccents);
     font-weight: 800px;
     font-family: 'semi';
+}
+
+.infoContent{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.infoText{
+    width: 50%;
+}
+
+.infoTags{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.tag{
+    padding: 5px 40px;
+    background: var(--btnBg);
+    border: var(--btnBorder);
+    color: var(--yellowAccents);
+    font-size: var(--smallFont);
+}
+
+.infoP{
+    font-family: 'semi';
+    font-size: var(--normFont);
+    color: var(--textWhite);
+    margin-top: 60px;
 }
 
 
