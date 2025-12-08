@@ -29,3 +29,12 @@ cards.forEach((card, index) => {
 });
 
 cards[0].classList.add('big');
+
+
+
+cards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+        selectCharacter(index); // saves character ID
+        window.location.href = "char.html"; // open template
+    });
+});
