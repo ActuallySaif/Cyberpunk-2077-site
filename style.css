@@ -157,14 +157,14 @@ header{
     gap: 30px;
 }
 
-.cartContainer{
-    position: absolute;
+#cartContainer{
+    position: fixed;
     padding: 40px;
     background: var(--yellowAccents);
     z-index: 99;
     right: 0;
     top: 170px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15px;
 }
@@ -655,4 +655,10 @@ footer{
 
 #deleteBtn{
     margin-left: 200px;
+}
+
+#cartMsg{
+    font-size: var(--secTitle);
+    font-family: 'semi';
+    padding: 40px;
 }
