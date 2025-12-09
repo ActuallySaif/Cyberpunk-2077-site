@@ -145,6 +145,11 @@ header{
     opacity: 0;
 }
 
+.headerBtns{
+    display: flex;
+    gap: 30px;
+}
+
 a, a:visited{
     text-decoration: none;
 }
@@ -205,7 +210,33 @@ nav a:hover{
     opacity: 1;
 }
 
-.heroBtn:hover{
+.loginBtn{
+    color: var(--yellowAccents);
+    font-size: var(--normFont);
+    background: var(--btnBg);
+    border: var(--btnBorder);
+    position: relative;
+    z-index: 5;
+    padding: 15px 57px;
+    animation: none;
+    transition: all;
+    opacity: 1;
+}
+
+.cartBtn{
+    color: var(--yellowAccents);
+    font-size: var(--normFont);
+    background: var(--btnBg);
+    border: var(--btnBorder);
+    position: relative;
+    z-index: 5;
+    padding: 15px 57px;
+    animation: none;
+    transition: all;
+    opacity: 1;
+}
+
+.heroBtn:hover, .loginBtn:hover, .cartBtn:hover{
     animation: BtnFlash 200ms linear forwards running;
 }
 
