@@ -59,3 +59,14 @@ let characters = [
         aff3: 'Afterlife Legend'
     }
 ];
+
+let users = [
+    {
+        username: 'Saif',
+        password: '2004'
+    },
+    {
+        username: 'Majd',
+        password: '2007'
+    }
+]

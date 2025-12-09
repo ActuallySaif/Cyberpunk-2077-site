@@ -132,6 +132,13 @@ body{
     text-transform: capitalize;
 }
 
+body.loginBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 120px;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -236,7 +243,7 @@ nav a:hover{
     opacity: 1;
 }
 
-.heroBtn:hover, .loginBtn:hover, .cartBtn:hover{
+.heroBtn:hover, .loginBtn:hover, .cartBtn:hover, #signBtn:hover{
     animation: BtnFlash 200ms linear forwards running;
 }
 
@@ -434,6 +441,19 @@ footer{
     position: relative;
 }
 
+.loginContainer{
+    background: url(Images/loginBg.svg);
+    width: 1395px;
+    height: 715px;
+    padding: 100px 40px 2px 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 50px auto;
+    gap: 40px;
+    position: relative;
+}
+
 #charImg{
     width: 39%;
     box-sizing: border-box;
@@ -490,3 +510,48 @@ footer{
     font-family: 'semi';
     font-size: var(--smallFont);
 }
+
+.inputLine{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputLabel{
+    color: var(--blueAccents);
+    font-size: var(--secTitle);
+    font-family: 'semi';
+}
+
+#username, #password{
+    width: 100%;
+    background: transparent;
+    border: 3px #58DDE6 solid;
+    font-size: var(--normFont);
+    margin-top: 8px;
+    padding: 20px;
+    color: var(--textWhite);
+    font-family: 'semi';
+    box-sizing: border-box;
+}
+
+#username:focus, #password:focus{
+    outline: #AC3A38 3px solid;
+}
+
+#signBtn{
+    color: var(--yellowAccents);
+    font-size: var(--secTitle);
+    background: var(--btnBg);
+    border: var(--btnBorder);
+    position: relative;
+    z-index: 5;
+    padding: 15px 57px;
+    animation: none;
+    transition: all;
+    opacity: 1;
+    font-family: 'semi';
+    cursor: pointer;
+    margin-top: 40px;
+}
+
