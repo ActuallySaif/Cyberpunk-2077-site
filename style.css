@@ -524,7 +524,7 @@ footer{
     font-size: var(--secTitle);
 }
 
-#InfoBio{
+#infoBio{
     color: var(--blueAccents);
     font-family: 'semi';
     font-size: var(--smallFont);
@@ -630,7 +630,7 @@ footer{
 
 .cartCard{
     background: #58dde685;
-    border: 3px #58DDE6 solid;
+    border: px #58DDE6 solid;
     display: flex;
     align-items: center;
     padding: 12px;
@@ -661,4 +661,18 @@ footer{
     font-size: var(--secTitle);
     font-family: 'semi';
     padding: 40px;
+}
+
+
+#profContainer{
+    background: url(Images/Biotracker.svg);
+    width: 1395px;
+    height: 890px;
+    padding: 100px 40px 2px 40px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: end;
+    margin: 50px auto;
+    justify-content: space-between;
+    position: relative;
 }

@@ -63,7 +63,13 @@ let characters = [
 let users = [
     {
         username: 'student@eui.edu.eg',
-        password: '123456'
+        password: '123456',
+        profName: 'Saif Hossam',
+        profAge: '21',
+        profBio: 'User did not set a bio',
+        aff1: 'Eui',
+        aff2: 'Ui/Ux',
+        aff3: 'N/A'
     }
 ]
 
