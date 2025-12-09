@@ -47,3 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+let headerCartBtn = document.getElementById('cartBtn');
+
+let cart = [];
+
+
+
+function addToCart(productID) {
+    
+};

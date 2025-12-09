@@ -157,6 +157,18 @@ header{
     gap: 30px;
 }
 
+.cartContainer{
+    position: absolute;
+    padding: 40px;
+    background: var(--yellowAccents);
+    z-index: 99;
+    right: 0;
+    top: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 a, a:visited{
     text-decoration: none;
 }
@@ -230,7 +242,7 @@ nav a:hover{
     opacity: 1;
 }
 
-.cartBtn{
+#cartBtn{
     color: var(--yellowAccents);
     font-size: var(--normFont);
     background: var(--btnBg);
@@ -243,7 +255,7 @@ nav a:hover{
     opacity: 1;
 }
 
-.heroBtn:hover, .loginBtn:hover, .cartBtn:hover, #signBtn:hover, #addBtn:hover{
+.heroBtn:hover, .loginBtn:hover, #cartBtn:hover, #signBtn:hover, #addBtn:hover{
     animation: BtnFlash 200ms linear forwards running;
 }
 
@@ -607,4 +619,40 @@ footer{
     padding: 10px 0;
     animation: none;
     cursor: pointer;
+}
+
+.cartTitle{
+    font-family: 'semi';
+    font-size: var(--normFont);
+    display: flex;
+    flex-direction: column;
+}
+
+.cartCard{
+    background: #58dde685;
+    border: 3px #58DDE6 solid;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.cCardImg{
+    width: 61px;
+}
+
+.cCardText{
+    margin-left: 12px;
+    font-family: 'semi';
+}
+
+.cCardName{
+    font-size: var(--smallFont);
+}
+
+.cCardPrice{
+    font-size: var(--normFont);
+}
+
+#deleteBtn{
+    margin-left: 200px;
 }
