@@ -243,7 +243,7 @@ nav a:hover{
     opacity: 1;
 }
 
-.heroBtn:hover, .loginBtn:hover, .cartBtn:hover, #signBtn:hover{
+.heroBtn:hover, .loginBtn:hover, .cartBtn:hover, #signBtn:hover, #addBtn:hover{
     animation: BtnFlash 200ms linear forwards running;
 }
 
@@ -388,6 +388,13 @@ nav a:hover{
     width: 100%;
     height: initial;
     box-sizing: border-box;
+}
+
+#shop{
+    padding: 60px 120px 120px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer{
@@ -555,3 +562,49 @@ footer{
     margin-top: 40px;
 }
 
+#errMsg{
+    color: var(--yellowAccents);
+    font-family: 'bold';
+    font-size: var(--secTitle);
+    display: none;
+}
+
+.shopCards{
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.shopCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shopImg{
+    border: var(--btnBorder);
+    height: 596px;
+}
+
+.shopName{
+    font-size: var(--normFont);
+    color: var(--blueAccents);
+    font-family: 'semi';
+}
+
+.shopPrice{
+    font-size: var(--secTitle);
+    color: var(--yellowAccents);
+    font-family: 'semi';
+}
+
+#addBtn{
+    font-family: 'semi';
+    font-size: var(--secTitle);
+    background-color: var(--btnBg);
+    border: var(--btnBorder);
+    color: var(--yellowAccents);
+    padding: 10px 0;
+    animation: none;
+    cursor: pointer;
+}

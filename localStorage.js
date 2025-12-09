@@ -62,11 +62,9 @@ let characters = [
 
 let users = [
     {
-        username: 'Saif',
-        password: '2004'
-    },
-    {
-        username: 'Majd',
-        password: '2007'
+        username: 'student@eui.edu.eg',
+        password: '123456'
     }
 ]
+
+localStorage.setItem("localUsers", JSON.stringify(users));
