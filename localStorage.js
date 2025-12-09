@@ -50,7 +50,7 @@ let characters = [
     },
 
     {
-        img: `Images/AdamSmasher.png`,
+        img: `Images/Adam.png`,
         charName: 'Adam Smasher',
         charAge: 'Cybernetic / Unknown',
         backstory: `Adam Smasher is a fully augmented killing machine working for Arasaka. After replacing nearly all of his body with cybernetics, he became one of the most feared solos in Night City. Cold, emotionless, and ruthless, he serves as Arasaka’s ultimate enforcer.`,
